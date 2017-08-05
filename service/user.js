@@ -35,7 +35,7 @@ module.exports = {
                 })
             } else {
                 console.log(users)
-                return null
+                return Promise.resolve(null)
             }
         })
     }
