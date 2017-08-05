@@ -5,7 +5,7 @@ const saltRounds = 10
 
 module.exports = {
     addUser: (name, password)=>{
-        return bcrypt.hash(password, saltRounds)
+        return bcrypt.hash(password)
             .then(hash=>User.create({
                 id: null,
                 name: name,
