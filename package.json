@@ -1,0 +1,22 @@
+{
+  "name": "login-demo",
+  "version": "1.0.0",
+  "description": "a demo of login",
+  "main": "app.js",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.7",
+    "express": "^4.15.3",
+    "log4js": "^2.3.3",
+    "mysql": "^2.14.1",
+    "mysql2": "^1.4.0",
+    "sequelize": "^4.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "nodemon --inspect app.js"
+  },
+  "author": "creedlimo",
+  "license": "ISC"
+}
