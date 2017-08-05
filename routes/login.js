@@ -10,7 +10,7 @@ router.post('/', (req, res) => {
     let { username, password } = req.body
     findUser(username, password).then(id => {
         if (id) {
-            res.redirect(`./welcome?id=${id}&name=${res.name || ''}`)
+            res.redirect(`./welcome?id=${id || ''}&name=${username || ''}`)
         } else {
             res.end('username or password wrong')
         }
