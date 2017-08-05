@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const addUser = require('../service/user').addUser
+const addUser = require('../service/user').add
 // const userDB = require()
 
 router.get('/', (req, res) => {

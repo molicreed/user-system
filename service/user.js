@@ -4,7 +4,7 @@ const bcrypt = require('./bcrypt')
 const saltRounds = 10
 
 module.exports = {
-    addUser: (name, password)=>{
+    add: (name, password)=>{
         return bcrypt.hash(password)
             .then(hash=>User.create({
                 id: null,
@@ -17,7 +17,7 @@ module.exports = {
             })
 
     },
-    findUser: (name, password)=>{
+    find: (name, password)=>{
         return User.findAll({
             where: {
                 name: name

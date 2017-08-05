@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const findUser = require('../service/user').findUser
+const findUser = require('../service/user').find
 // const userDB = require()
 
 router.get('/', (req, res) => {
@@ -18,6 +18,6 @@ router.post('/', (req, res) => {
         console.log('reject')
         res.end('system error')
     })
-
 })
+
 module.exports = router
