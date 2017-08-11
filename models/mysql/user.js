@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize')
-const config = require('../config/db')
+const config = require('../../config/db')
 
 
 let sequelize = new Sequelize(config.database, config.username, config.password, {
@@ -24,6 +24,4 @@ let User = sequelize.define('user',{
     timestamps: false
 })
 
-module.exports = {
-    user: User
-}
+module.exports = User

@@ -1,4 +1,4 @@
-const User = require('./sql').user
+const User = require('../models/mysql/user')
 const bcrypt = require('./bcrypt')
 
 const saltRounds = 10
@@ -11,7 +11,7 @@ module.exports = {
                 name: name,
                 password: hash,
                 crypt: 1
-            })).then(p=>{
+            })).then(p=>{  
                 console.log('created P', p.dataValues)
                 return p
             })
