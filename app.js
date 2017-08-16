@@ -9,7 +9,7 @@ app.set('view engine', 'ejs')
 
 app.use(cookieParser())
 app.use(bodyParser.json({
-    limit: '100kb'
+    limit: '200kb'
 }))
 
 app.use(bodyParser.urlencoded({
